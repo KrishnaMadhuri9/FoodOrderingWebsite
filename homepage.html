@@ -1,0 +1,1627 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="cssStyle.css">
+    </head>
+    <body>
+        /*Home Page*/
+        <div id="homePage">
+            <div class="background d-flex flex-column justify-content-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card cardStyle text-center">
+                                <h1 class="shadowing">Welcome India</h1>
+                                <p class="shadowing">Mouth savouring food at your fingertips</p>
+                                <div class="text-center">
+                                    <button id="orderNowButton">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        /*Main Menu*/
+        <div class="MenuBackground d-none" id="mainMenu">
+            <h1>Inspiration for your order</h1>
+            <ul class="text-center"> 
+                <div class="container">
+                    <div class="row"> 
+                        <li class="col-12 col-md-6">
+                            <button class="itemBtn m-3" id="startersBtn">
+                                <img src="https://realfood.tesco.com/media/images/RFO-BeetrootChickpeaBites-1400x919-v2-754111cd-54eb-4e65-8712-0adc3594f53a-0-1400x919.jpg" class="mainMenuImg"/>
+                                <p class="mainMenuDesc">Starters</p>
+                            </button>
+                        </li>
+                        <li class="col-12 col-md-6">
+                            <button class="itemBtn m-3" id="soupsBtn">
+                                <img src="https://www.inspiredtaste.net/wp-content/uploads/2018/10/Homemade-Vegetable-Soup-Recipe-2-1200.jpg" class="mainMenuImg"/>
+                                <p class="mainMenuDesc">Soups</p>
+                            </button>   
+                        </li>
+                        <li class="col-12 col-md-6">
+                            <button class="itemBtn m-3" id="rotiBtn">
+                                <img src="https://3.bp.blogspot.com/-TsR1mrtpIic/WTgVxZcV4KI/AAAAAAAACWQ/g626zbTr0EwI_lGHlCRA9VO3SvV1ROe-gCLcB/s1600/loonapix_14968509663081167873.jpg" class="mainMenuImg"/>
+                                <p class="mainMenuDesc">Roti</p>
+                            </button>  
+                        </li>
+                        <li class="col-12 col-md-6">
+                            <button class="itemBtn m-3" id="biryaniBtn">
+                                <img src="https://i.ytimg.com/vi/Do7ZdUodDdw/maxresdefault.jpg" class="mainMenuImg"/>
+                                <p class="mainMenuDesc">Biryani</p>
+                            </button> 
+                        </li>
+                        <li class="col-12 col-md-6">
+                            <button class="itemBtn m-3" id="curriesBtn">
+                                <img src="https://vegecravings.com/wp-content/uploads/2016/08/kadai-paneer-gravy-recipe-step-by-step-instructions.jpg" class="mainMenuImg"/>
+                                <p class="mainMenuDesc">Curries</p>
+                            </button> 
+                        </li>
+                        <li class="col-12 col-md-6">
+                            <button class="itemBtn m-3" id="sandwichBtn">
+                                <img src="https://aflavorjournal.com/wp-content/uploads/2018/09/bistro-favorites-4.jpg" class="mainMenuImg"/>
+                                <p class="mainMenuDesc">sandwich</p>
+                            </button> 
+                        </li>
+                        <li class="col-12 col-md-6">
+                            <button class="itemBtn m-3" id="burgerBtn">
+                                <img src="https://s.wsj.net/public/resources/images/BN-NJ737_burger_GR_20160404133910.jpg" class="mainMenuImg"/>
+                                <p class="mainMenuDesc">Burger</p>
+                            </button> 
+                        </li>
+                        <li class="col-12 col-md-6">
+                            <button class="itemBtn m-3" id="pizzaBtn">
+                                <img src="https://cookingitalians.com/wp-content/uploads/2024/11/Margherita-Pizza.jpg" class="mainMenuImg"/>
+                                <p class="mainMenuDesc">Pizza</p>
+                            </button> 
+                        </li>
+                        <li class="col-12 col-md-6">
+                            <button class="itemBtn m-3" id="noodlesBtn">
+                                <img src="https://static.wixstatic.com/media/5df692_052c1760e74a49878074d484ee89f46a~mv2.jpeg/v1/fill/w_1000,h_750,al_c,q_85,usm_0.66_1.00_0.01/5df692_052c1760e74a49878074d484ee89f46a~mv2.jpeg" class="mainMenuImg"/>
+                                <p class="mainMenuDesc">Noodles</p>
+                            </button> 
+                        </li>
+                        <li class="col-12 col-md-6">
+                            <button class="itemBtn m-3" id="frankieBtn">
+                                <img src="https://i.ytimg.com/vi/D-q5bZ2ESwg/maxresdefault.jpg" class="mainMenuImg"/>
+                                <p class="mainMenuDesc">Frankies</p>
+                            </button> 
+                        </li>
+                        <li class="col-12 col-md-6">
+                            <button class="itemBtn m-3" id="momoBtn">
+                                <img src="https://buddymantra.com/wp-content/uploads/2020/08/ssss-1024x680.jpg" class="mainMenuImg"/>
+                                <p class="mainMenuDesc">Momos</p>
+                            </button> 
+                        </li>
+                        <li class="col-12 col-md-6">
+                            <button class="itemBtn m-3" id="tiffinBtn">
+                                <img src="https://img.freepik.com/premium-photo/indian-dosa-recipe_1170530-939.jpg" class="mainMenuImg"/>
+                                <p class="mainMenuDesc">Tiffins</p>
+                            </button> 
+                        </li>
+                        <li class="col-12 col-md-6">
+                            <button class="itemBtn m-3" id="icecreamBtn">
+                                <img src="https://media.timeout.com/images/105661191/1024/768/image.jpg" class="mainMenuImg"/>
+                                <p class="mainMenuDesc">IceCreams</p>
+                            </button> 
+                        </li>
+                        <li class="col-12 col-md-6">
+                            <button class="itemBtn m-3" id="sweetbtn">
+                                <img src="https://storage.googleapis.com/wp-static/bombaysweetcentre/ad3c1f16-mixed-indian-sweets-scaled.jpg" class="mainMenuImg"/>
+                                <p class="mainMenuDesc">Sweets</p>
+                            </button> 
+                        </li>
+                        <li class="col-12 col-md-6">
+                            <button class="itemBtn m-3" id="snacksBtn">
+                                <img src="https://i.ytimg.com/vi/PZRvGkAkHR4/maxresdefault.jpg" class="mainMenuImg"/>
+                                <p class="mainMenuDesc">Traditional Snacks</p>
+                            </button> 
+                        </li>
+                    </div>
+                </div>
+            </ul>                
+        </div>
+        /*complete Menu*/
+        <div class="MenuBackground d-none" id="completeMenu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="starters">
+                            <h1>Starters</h1>
+                            <ul>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="Gobi65">Gobi 65</h2>
+                                            <p class="mt-3 desc">A crispy, spiced cauliflower snack, deep-fried 
+                                                to perfection for a flavourful and crunchy experience.
+                                                <br/>
+                                                <span class="subMenuDesc" id="gobi65Price">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/gobi-65-recipe-1.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addGobi65">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="PaneerManchuria">Paneer Manchuria</h2>
+                                            <p class="mt-3 desc">Soft paneer cubes fried crisp and coated with zesty,
+                                                umami-rich manchurian sauce with hints of ginger and chilli.
+                                                <br/>
+                                                <span class="subMenuDesc" id="paneerManchuriaPrice">399/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://parcelkaro.in/wp-content/uploads/2023/01/Paneer-Manchurian-e1673029719763.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addPaneerManchuria">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="BabyCornDry">Baby Corn Dry</h2>
+                                            <p class="mt-3 desc">Babycorn are coated in batter, deep fried until crisp
+                                                and then tossed in a flavourful mixture of spices, ginger, garlic, and sauces.
+                                                <br/>
+                                                <span class="subMenuDesc" id="babyCornDryPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://vegecravings.com/wp-content/uploads/2018/03/Baby-Corn-Manchurian-Recipe-Step-by-Step-Instructions-1024x981.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addBabyCornDry">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="AlooTikki">Aloo Tikki</h2>
+                                            <p class="mt-3 desc">Spiced, mashed potatoes formed into patties(tikkis) and shallowfried
+                                                served with mint-coriander chutney.
+                                                <br/>
+                                                <span class="subMenuDesc" id="alooTikkiPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.indianveggiedelight.com/wp-content/uploads/2023/07/aloo-tikki-640x853.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addAlooTikki">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="CheeseBalls">Cheese Balls</h2>
+                                            <p class="mt-3 desc">A chilled, savoury spread made from cream cheese, grated 
+                                                cheddar and seasoning, often rolled in chopped pecans.
+                                                <br/>
+                                                <span class="subMenuDesc" id="cheeseBallsPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://easyappetizers.com/wp-content/uploads/2022/09/Potato-Cheese-Balls-social.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addCheeseBalls">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="FrenchFries">French Fries</h2>
+                                            <p class="mt-3 desc">A thin strip of deep fried potatoes.
+                                                <br/>
+                                                <span class="subMenuDesc" id="frenchFriesPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://static.fanpage.it/wp-content/uploads/sites/22/2020/09/iStock-618214356.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addFrenchFries">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="soups">
+                            <h1>Soups</h1>
+                            <ul>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="CreamofBroccoliandSpinachSoup">Cream of Broccoli and Spinach Soup</h2>
+                                            <p class="mt-3 desc">A rich and creamy soup featuring broccoli and spinach
+                                                <br/>
+                                                <span class="subMenuDesc" id="creamofBroccoliandSpinachSoupPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://healthiersteps.com/wp-content/uploads/2023/02/broccoli-spinach-soup-recipe-640x853.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addCreamofBroccoliandSpinachSoup">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="CreamofTomatoSoup">Cream of Tomato Soup</h2>
+                                            <p class="mt-3 desc">smooth and mild thick soup topped with Bread Crums 
+                                                and Milk Cream
+                                                <br/>
+                                                <span class="subMenuDesc" id="creamofTomatoSoupPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.modernhoney.com/wp-content/uploads/2017/11/Creamy-Tomato-Basil-Soup-6.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addCreamofTomatoSoup">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="LemonCorianderSoup">Lemon Coriander Soup</h2>
+                                            <p class="mt-3 desc">A light and refreshing soup with lemon and cilantro
+                                                <br/>
+                                                <span class="subMenuDesc" id="lemonCorianderSoupPrice">199/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://i0.wp.com/www.shanazrafiq.com/wp-content/uploads/2020/02/Lemon-Coriander-Soup-1.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addLemonCorianderSoup">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="HotandSourSoup">Hot and Sour Soup</h2>
+                                            <p class="mt-3 desc">A classic spicy and tangy soup.
+                                                <br/>
+                                                <span class="subMenuDesc" id="hotandSourSoupPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.knedir.com/wp-content/uploads/2024/11/5.5-10.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addHotandSourSoup">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="TomKhaSoup">Tom Kha Soup</h2>
+                                            <p class="mt-3 desc">A fragrant thai coconut milk soup.
+                                                <br/>
+                                                <span class="subMenuDesc" id="tomKhaSoupPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://rasamalaysia.com/wp-content/uploads/2013/12/tom-kha-gai2-223x335.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addTomKhaSoup">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="ManchowSoup">Manchow Soup</h2>
+                                            <p class="mt-3 desc">A popular dark brown soup with vegetables.
+                                                <br/>
+                                                <span class="subMenuDesc" id="manchowSoupPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://recipesofhome.com/wp-content/uploads/2020/03/manchow-soup-recipe-1024x683.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addManchowSoup">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="roti">
+                            <h1>Roti</h1>
+                            <ul>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="TandooriRoti">Tandoori Roti</h2>
+                                            <p class="mt-3 desc">Traditional whole wheat roti cooked in clay oven.
+                                                served warm with slightly smoky flavour.
+                                                <br/>
+                                                <span class="subMenuDesc" id="tandooriRotiPrice">49/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://static.vecteezy.com/system/resources/previews/015/933/438/large_2x/tandoori-naan-indian-tandoori-roti-or-flat-bread-served-in-a-plate-isolated-free-photo.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addTandooriRoti">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="ButterRoti">Butter Roti</h2>
+                                            <p class="mt-3 desc">Soft roti brushed with butter for added richness. 
+                                                <br/>
+                                                <span class="subMenuDesc" id="butterRotiPrice">59/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.spiritofindiapattaya.com/wp-content/uploads/2018/09/Butter-Roti.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addButterRoti">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="GarlicButterRoti">Garlic Butter Roti</h2>
+                                            <p class="mt-3 desc">Tandoori roti infused with garlic and finished with butter.
+                                                <br/>
+                                                <span class="subMenuDesc" id="garlicButterRotiPrice">69/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://wineflavorguru.com/wp-content/uploads/2025/08/Garlic-Butter-Roti.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addGarlicButterRoti">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="AdrakiMirchiRoti">Adraki Mirchi Roti</h2>
+                                            <p class="mt-3 desc">Ginger and chilli based roti. Adding a flavourful and
+                                                slightly spicy kick.
+                                                <br/>
+                                                <span class="subMenuDesc" id="adrakiMirchiRotiPrice">59/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://cdn3.didevelop.com/public/product_images/4410/533_430af348bff731cd7960827196956e90.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addAdrakiMirchiRoti">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="MissiRoti">Missi Roti</h2>
+                                            <p class="mt-3 desc">Made with a mixture of gram flour, wheat flour, seasoned 
+                                                with various spices.
+                                                <br/>
+                                                <span class="subMenuDesc" id="missiRotiPrice">59/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://cdn3.foodviva.com/static-content/food-images/north-indian-recipes/missi-roti/missi-roti.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addMissiRoti">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="ButterNaan">Butter Naan</h2>
+                                            <p class="mt-3 desc">Classic Naan toped with generous layers of butter.
+                                                <br/>
+                                                <span class="subMenuDesc" id="butterNaanPrice">79/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://theplantbasedschool.com/wp-content/uploads/2023/02/Naan-bread-1-2.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addButterNaan">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="biryani">
+                            <h1>Biryani</h1>
+                            <ul>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="SpecialDumBiryani">Special Dum Biryani</h2>
+                                            <p class="mt-3 desc">Layers of aromatic masala cooked veggies, panner, American
+                                                corn with flavourful basmati rice.
+                                                <br/>
+                                                <span class="subMenuDesc" id="specialDumBiryaniPrice">399/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://vegecravings.com/wp-content/uploads/2016/07/veg-biryani-recipe-step-by-step-instructions.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addSpecialDumBiryani">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="HariyaliPaneerTikkaBiryani">Hariyali Paneer Tikka Biryani</h2>
+                                            <p class="mt-3 desc">Aromatic basmati rice with succulent cubes of panner marinated
+                                                in a green herb and spicy mixture.
+                                                <br/>
+                                                <span class="subMenuDesc" id="hariyaliPaneerTikkaBiryaniPrice">499/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://orders.popskitchen.in/storage/2024/09/image-285.png" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addHariyaliPaneerTikkaBiryani">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="SpecialHyderabadiBiryani">Special Hyderabadi Biryani</h2>
+                                            <p class="mt-3 desc">Aromatic basmati rice, assorted vegetables and spices
+                                                layered and cooked to perfection.
+                                                <br/>
+                                                <span class="subMenuDesc" id="specialHyderabadiBiryaniPrice">449/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.wikihow.com/images/a/a8/Make-Hyderabadi-Vegetable-Biryani-Step-15.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addSpecialHyderabadiBiryani">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="SpecialChaapBiryani">Special Chaap Biryani</h2>
+                                            <p class="mt-3 desc">Aromatic basmati rice cooked with, marinated and grilled Chaap
+                                                with blended spices.
+                                                <br/>
+                                                <span class="subMenuDesc" id="specialChaapBiryaniPrice">449/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://mydaintykitchen.com/wp-content/uploads/2019/06/20190530_140343-768x576.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addSpecialChaapBiryani">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="SpecialTawaKumbhBiryani">Special Tawa Kumbh Biryani</h2>
+                                            <p class="mt-3 desc">Layers of aromatic masala cooked vegetables, Mushroom,
+                                                American Corn with flavourful basmati rice.
+                                                <br/>
+                                                <span class="subMenuDesc" id="specialTawaKumbhBiryaniPrice">499/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://img.freepik.com/premium-photo/delicious-tawa-biryani-biryani-picture-photography_1020697-115416.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addSpecialTawaKumbhBiryani">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="curry">
+                            <h1>Curries</h1>
+                            <ul>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="DiwaniHandi">Diwani Handi</h2>
+                                            <p class="mt-3 desc">A rich and creamy dish made with a variety of
+                                                mixed vegetables cooked in a luscious and aromatic curry.
+                                                <br/>
+                                                <span class="subMenuDesc" id="diwaniHandiPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.whiskaffair.com/wp-content/uploads/2021/02/Paneer-Hara-Pyaz-2-3-180x180.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addDiwaniHandi">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="Kolhapuri">Kolhapuri</h2>
+                                            <p class="mt-3 desc">Mixed vegetables cooked in chef's special masala. 
+                                                <br/>
+                                                <span class="subMenuDesc" id="kolhapuriPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://images.saymedia-content.com/.image/t_share/MTc0NjIwMDYwNDIxMDcyODQx/how-to-make-restaurant-style-veg-kolhapuri-curry.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addKolhapuri">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="BindiMasala">Bindi Masala</h2>
+                                            <p class="mt-3 desc">A flavourful stir-fry made with tender okra, onions, tomatos,
+                                                and spices, creating a savory and delicious dish.
+                                                <br/>
+                                                <span class="subMenuDesc" id="bindiMasalaPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.whiskaffair.com/wp-content/uploads/2020/11/Bhindi-Masala-2-1-1200x1800.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addBindiMasala">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="SarsonKhaSaag">Sarson Kha Saag</h2>
+                                            <p class="mt-3 desc">An exotic punjabi dish made from musturd, greens and spices.
+                                                <br/>
+                                                <span class="subMenuDesc" id="sarsonKhaSaagPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://img.freepik.com/premium-photo/leafy-goodness-saag-punjabi-dish-greens_1077802-1139.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addSarsonKhaSaag">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="RajmaMasala">Rajma Masala</h2>
+                                            <p class="mt-3 desc">Rajma cooked in tangy tomato gravy and spices.
+                                                <br/>
+                                                <span class="subMenuDesc" id="rajmaMasalaPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://spicecravings.com/wp-content/uploads/2017/12/Rajma-1.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addRajmaMasala">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="CornPalak">Corn Palak</h2>
+                                            <p class="mt-3 desc">Combining sweet corn and spinach cooked in gravy made 
+                                                with onion,tomato and aromatic spices.
+                                                <br/>
+                                                <span class="subMenuDesc" id="cornPalakPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://hungryforever.net/wp-content/uploads/2018/02/palak-corn.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addCornPalak">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="sandwich">
+                            <h1>Sandwich</h1>
+                            <ul>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="ClubSandwich">Club Sandwich</h2>
+                                            <p class="mt-3 desc">A multi layered sandwich with assorted vegetable fillings.
+                                                <br/>
+                                                <span class="subMenuDesc" id="clubSandwichPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://recipesee.com/wp-content/uploads/2024/11/Club-Sandwich-Recipes.png" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addClubSandwich">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="CheeseMayoSandwich">Cheese Mayo Sandwich</h2>
+                                            <p class="mt-3 desc">A creamy blend of cheese and mayonnaise in soft bread.
+                                                <br/>
+                                                <span class="subMenuDesc" id="cheeseMayoSandwichPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.allsandwiches.com/images/cheese-mayo-sandwich-recipe.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addCheeseMayoSandwich">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="CheeseKhakhraSandwich">Cheese Khakhra Sandwich</h2>
+                                            <p class="mt-3 desc">Khakhra sandwich layered with cheese for crisp and creamy bite.
+                                                <br/>
+                                                <span class="subMenuDesc" id="cheeseKhakhraSandwichPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://4.imimg.com/data4/VY/WE/MY-2770645/sandwich-khakhra-500x500.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addCheeseKhakhraSandwich">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="TripleGrilledSandwich">Triple Grilled Sandwich</h2>
+                                            <p class="mt-3 desc">Three layered grilled sandwich with assorted vegetables filling.
+                                                <br/>
+                                                <span class="subMenuDesc" id="tripleGrilledSandwichPrice">349/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://loveoffood.sodexo.com/wp-content/uploads/2020/10/LOF_TripleGrilledCheese_2650x756.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addTripleGrilledSandwich">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="CheeseSandwich">Cheese Sandwich</h2>
+                                            <p class="mt-3 desc">A simple sandwich filled with slices of cheese.
+                                                <br/>
+                                                <span class="subMenuDesc" id="cheeseSandwichPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.sargento.com/assets/Uploads/Recipe/Image/Louie_Grilled_Cheese-v3__FocusFillWyIwLjAwIiwiMC4wMCIsMTEwMCw2NTdd.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addCheeseSandwich">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="MumbaiSandwich">Mumbai Sandwich</h2>
+                                            <p class="mt-3 desc">A layered sandwich with fresh vegetables and classic chutneys.
+                                                <br/>
+                                                <span class="subMenuDesc" id="mumbaiSandwichPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.sandyathome.com/wp-content/uploads/2019/04/bombay-grilled-sandwich-1024x577.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addMumbaiSandwich">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="burger">
+                            <h1>Burger</h1>
+                            <ul>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="MomoBurger">Momo Burger</h2>
+                                            <p class="mt-3 desc">Fusion burger with fried momos.
+                                                <br/>
+                                                <span class="subMenuDesc" id="momoBurgerPrice">349/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://smedia2.intoday.in/indiatoday/images/stories/2015September/momo-burger-4_100515041922.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addMomoBurger">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="CheeseBurger">Cheese Burger</h2>
+                                            <p class="mt-3 desc">A classic burger layered with cheese and fresh vegetables.
+                                                <br/>
+                                                <span class="subMenuDesc" id="cheeseBurgerPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://brookrest.com/wp-content/uploads/2020/05/AdobeStock_282247995-scaled.jpeg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addCheeseBurger">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="CottageCheeseBurger">Cottage Cheese Burger</h2>
+                                            <p class="mt-3 desc">Classic burger with a paneer patty.
+                                                <br/>
+                                                <span class="subMenuDesc" id="cottageCheeseBurgerPrice">349/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/recipe_pics/cottage_cheese_burgers.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addCottageCheeseBurger">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="AlooTikkiBurger">Aloo Tikki Burger</h2>
+                                            <p class="mt-3 desc">Burger featuring a crispy aloo tikki.
+                                                <br/>
+                                                <span class="subMenuDesc" id="alooTikkiBurgerPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://spicecravings.com/wp-content/uploads/2022/02/Aloo-Tikki-Burger-Featured-1024x1024.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addAlooTikkiBurger">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="PannerTikkiBurger">Panner Tikki Burger</h2>
+                                            <p class="mt-3 desc">Fusion Burger with paneer tikki.
+                                                <br/>
+                                                <span class="subMenuDesc" id="pannerTikkiBurgerPrice">349/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://patelcafenrestro.com/wp-content/uploads/2024/07/DM-2024-07-29T143428.249.png" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addPannerTikkiBurger">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="pizza">
+                            <h1>Pizza</h1>
+                            <ul>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="MargeritaPizza">Margerita Pizza</h2>
+                                            <p class="mt-3 desc">Thin crust 12 inch pizza.
+                                                <br/>
+                                                <span class="subMenuDesc" id="margeritaPizzaPrice">499/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://i.pinimg.com/originals/57/e7/a1/57e7a19334571946391a7430fcb86202.png" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addMargeritaPizza">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="PaneerTikkaPizza">Paneer Tikka Pizza</h2>
+                                            <p class="mt-3 desc">Thin crusted 12 inch pizza.
+                                                <br/>
+                                                <span class="subMenuDesc" id="paneerTikkaPizzaPrice">599/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.ruchiskitchen.com/wp-content/uploads/2020/09/Paneer-tikka-pizza-recipe-1.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addPaneerTikkaPizza">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="OnionPizza">Onion Pizza</h2>
+                                            <p class="mt-3 desc">Thin crusted 12 inch pizza.
+                                                <br/>
+                                                <span class="subMenuDesc" id="onionPizzaPrice">499/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://acrazyfamily.com/wp-content/uploads/2023/02/organickitchen-969-1024x542.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addOnionPizza">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="FarmHousePizza">Farm House Pizza</h2>
+                                            <p class="mt-3 desc">Thin crusted 12 inch pizza.
+                                                <br/>
+                                                <span class="subMenuDesc" id="farmHousePizzaPrice">549/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://content.instructables.com/ORIG/FRR/BNUK/KA5CV891/FRRBNUKKA5CV891.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addFarmHousePizza">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="VegExtravaganzaPizza">Veg Extravaganza Pizza</h2>
+                                            <p class="mt-3 desc">Thin crusted 12 inch pizza.
+                                                <br/>
+                                                <span class="subMenuDesc" id="vegExtravaganzaPizzaPrice">599/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://cdn.travelpeacockmagazine.com/wp-content/uploads/2024/07/Nino_s-Belissima.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addVegExtravaganzaPizza">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="noodles">
+                            <h1>Noodles</h1>
+                            <ul>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="HakkaNoodles">Hakka Noodles</h2>
+                                            <p class="mt-3 desc">Wok-tossed noodles loaded with chruncy carrots,
+                                                cabbage & onions finished with dark soy & spring onion.
+                                                <br/>
+                                                <span class="subMenuDesc" id="hakkaNoodlesPrice">349/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://mysorecafe.com.au/wp-content/uploads/2022/07/Akka-Noodles-1.png" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addHakkaNoodles">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="SchezwanNoodles">Schezwan Noodles</h2>
+                                            <p class="mt-3 desc">Schezwan's in the building-spicy,saucy, desi chinese-style
+                                                . Veggies, noodles, wok-tossed in our fiery schezwan sauce.
+                                                <br/>
+                                                <span class="subMenuDesc" id="schezwanNoodlesPrice">349/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.nestleprofessional.in/sites/default/files/2022-05/Schezwan-Noodles_0.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addSchezwanNoodles">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="Chowmein">Chowmein</h2>
+                                            <p class="mt-3 desc">Straight from the streets to your 
+                                                plate-this one's got noodles, veggies and that smoky chowmein zing.
+                                                <br/>
+                                                <span class="subMenuDesc" id="chowmeinPrice">349/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://amandacooksandstyles.com/wp-content/uploads/2020/11/20201108_122620-2.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addChowmein">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="ManchowSoupwithCrispyNoodles">Manchow Soup with Crispy Noodles</h2>
+                                            <p class="mt-3 desc">Spicy, herby, hot Manchow soup packed with veggies- and
+                                                that iconic crunchy noodles topping.
+                                                <br/>
+                                                <span class="subMenuDesc" id="manchowSoupwithCrispyNoodlesPrice">399/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://i.ytimg.com/vi/LyMNpKIQ3o0/maxresdefault.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addManchowSoupwithCrispyNoodles">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="ChilliGarlicNoodles">Chilli Garlic Noodles</h2>
+                                            <p class="mt-3 desc">Noodles tossed with crunchy veggies, loaded garlic, and a chilli kick.
+                                                <br/>
+                                                <span class="subMenuDesc" id="chilliGarlicNoodlesPrice">325/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://myfoodstory.com/wp-content/uploads/2020/09/Chilli-Garlic-Noodles-2-1024x1536.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addChilliGarlicNoodles">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="BurntGarlicNoodles">Burnt Garlic Noodles</h2>
+                                            <p class="mt-3 desc">Crispy veggies meet that unmistakable burnt garlic sizzle.
+                                                <br/>
+                                                <span class="subMenuDesc" id="burntGarlicNoodlesPrice">325/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://images.hindustantimes.com/img/2021/02/18/550x309/noodles_1613645058587_1613645079918.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addBurntGarlicNoodles">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="frankie">
+                            <h1>Frankies</h1>
+                            <ul>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="PannerTikkaSignatureWrap">Panner Tikka Signature Wrap</h2>
+                                            <p class="mt-3 desc">Double the yum with double portion of spicy paneer,
+                                                marinated in tandoori sauce, along with some nutritious veggies.
+                                                <br/>
+                                                <span class="subMenuDesc" id="pannerTikkaSignatureWrapPrice">199/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://img.freepik.com/premium-photo/paneer-tikka-wrap-isolated-white-background_1166140-11133.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addPannerTikkaSignatureWrap">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="CornandPeasSignatureWrap">Corn and Peas Signature Wrap</h2>
+                                            <p class="mt-3 desc">Double portions of nutritious green pea, golden corn, and
+                                                diced carrots combined with mayo along with veggies.
+                                                <br/>
+                                                <span class="subMenuDesc" id="cornandPeasSignatureWrapPrice">149/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://bommasanibrothers.com/cdn/shop/files/SweetCornWrap.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addCornandPeasSignatureWrap">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="ShammiKebabSignatureWrap">Shammi Kebab Signature Wrap</h2>
+                                            <p class="mt-3 desc">Enjoy mouth-watering kebab made of lentils, paired with veggies
+                                                and tasty sauces.
+                                                <br/>
+                                                <span class="subMenuDesc" id="shammiKebabSignatureWrapPrice">175/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://swuat.test.subway.com/images/Menu/IND/ENG/Shammi-wrap-594x334.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addShammiKebabSignatureWrap">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="AlooPattySignatureWrap">Aloo Patty Signature Wrap</h2>
+                                            <p class="mt-3 desc">Double portions of crispy aloo patty, topped with nutritious
+                                                veggies and yummy sauces. 
+                                                <br/>
+                                                <span class="subMenuDesc" id="alooPattySignatureWrapPrice">149/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://burgerandwraphouse.in/wp-content/uploads/2025/02/16.png" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addAlooPattySignatureWrap">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="ChilliBeanSignatureWrap">Chilli Bean Signature Wrap</h2>
+                                            <p class="mt-3 desc">Enjoy the serving filled with double portion of chilli 
+                                                bean patty along with veggies and sauce.
+                                                <br/>
+                                                <span class="subMenuDesc" id="chilliBeanSignatureWrapPrice">149/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.veganeasy.org/wp-content/uploads/2017/02/2302.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addChilliBeanSignatureWrap">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="DeliteSignatureWrap">Delite Signature Wrap</h2>
+                                            <p class="mt-3 desc">A wholesome wrap with double portion of nutritious veggies
+                                                and sauce.
+                                                <br/>
+                                                <span class="subMenuDesc" id="deliteSignatureWrapPrice">175/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://choppedleaf.ca/wp-content/uploads/signature-wrap.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addDeliteSignatureWrap">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="momo">
+                            <h1>Momos</h1>
+                            <ul>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="SteamedVegMomos">Steamed Veg Momos</h2>
+                                            <p class="mt-3 desc"> veg momos with special sauce.
+                                                <br/>
+                                                <span class="subMenuDesc" id="steamedVegMomosPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://4.bp.blogspot.com/-BD6z0rLHgCQ/VBlZyMzRbdI/AAAAAAAAAL4/oAc_IiFGUyM/s1600/Veg-momos.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addSteamedVegMomos">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="FriedMomos">Fried Momos</h2>
+                                            <p class="mt-3 desc">6 pieces of veg momos with special sauce.
+                                                <br/>
+                                                <span class="subMenuDesc" id="friedMomosPrice">299/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://i0.wp.com/bakaasur.com/wp-content/uploads/2022/12/fried-momo-recipe.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addFriedMomos">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="SchezwanPanFriedMomos">Schezwan Pan Fried Momos</h2>
+                                            <p class="mt-3 desc">Pan fried in schezwan sauce with special momo sauce.
+                                                <br/>
+                                                <span class="subMenuDesc" id="schezwanPanFriedMomosPrice">349/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.masalaherb.com/wp-content/uploads/2016/05/Manchurian-Momo-Dumplings-Pork-Ginger-Vegetarian.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addSchezwanPanFriedMomos">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="BarbequeFriedMomos">Barbeque Fried Momos</h2>
+                                            <p class="mt-3 desc">Crispy fried momos tossed in smoky barbeque 
+                                                sauce every bite packed with fresh veggies and irresistable flavor.
+                                                <br/>
+                                                <span class="subMenuDesc" id="barbequeFriedMomosPrice">349/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.yumcurry.com/wp-content/uploads/2021/05/chilli-garlic-momos-feature-image.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addBarbequeFriedMomos">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="PaneerSchezwanFriedMomos">Paneer Schezwan Fried Momos</h2>
+                                            <p class="mt-3 desc">Paneer momos fried and mixed in spicy schezwan.
+                                                <br/>
+                                                <span class="subMenuDesc" id="paneerSchezwanFriedMomosPrice">399/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.lifeberrys.com/img/article/schezwan-momo1-1629106594-lb.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addPaneerSchezwanFriedMomos">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="PaneerBarbequeFriedMomos">Paneer Barbeque Fried Momos</h2>
+                                            <p class="mt-3 desc">Soft paneer filled momos, fried and tossed in rich barbeque sauce.
+                                                Perfect balance of spices, smoky and tangy.
+                                                <br/>
+                                                <span class="subMenuDesc" id="paneerBarbequeFriedMomosPrice">399/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.lifeberrys.com/img/article/schezwan-momo1-1629106594-lb.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addPaneerBarbequeFriedMomos">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="tiffins">
+                            <h1>Tiffins</h1>
+                            <ul>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="Idly">Idly</h2>
+                                            <p class="mt-3 desc">A set of 2 soft idly, steamed rice cakes served 
+                                                typically with sambar and chutney.
+                                                <br/>
+                                                <span class="subMenuDesc" id="idlyPrice">149/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://boldoutline.in/wp-content/uploads/2020/01/web-cover-57.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addIdly">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="MasalaDosa">Masala Dosa</h2>
+                                            <p class="mt-3 desc">Dosa stuffed with a spiced potato filling.
+                                                <br/>
+                                                <span class="subMenuDesc" id="masalaDosaPrice">220/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://vismaifood.com/storage/app/uploads/public/8b4/19e/427/thumb__1200_0_0_0_auto.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addMasalaDosa">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="PooriMasala">Poori Masala</h2>
+                                            <p class="mt-3 desc">Fluffy, deep fried pooris served with a mildly spiced
+                                                potato masala.
+                                                <br/>
+                                                <span class="subMenuDesc" id="pooriMasalaPrice">220/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://i.pinimg.com/originals/e2/79/15/e27915bc55788d40ac2617400497665c.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addPooriMasala">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="TawaParathaandCurry">Tawa Paratha and Curry</h2>
+                                            <p class="mt-3 desc">Flaky, golden tawa-cooked paratha served with 
+                                                a flavourful and comforting curry.
+                                                <br/>
+                                                <span class="subMenuDesc" id="tawaParathaandCurryPrice">199/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://lmbsweets.com/wp-content/uploads/2021/07/variety-of-tawa-paratha-.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addTawaParathaandCurry">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="Upma">Upma</h2>
+                                            <p class="mt-3 desc">Savory South Indian dish made from semolina and spices.
+                                                <br/>
+                                                <span class="subMenuDesc" id="upmaPrice">149/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://masterchefskitchen.com/wp-content/uploads/2021/03/Upma-Recipe.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addUpma">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="iceCreams">
+                            <h1>Ice Creams</h1>
+                            <ul>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="MixedDryFruitIcecream">Mixed Dry Fruit Icecream</h2>
+                                            <p class="mt-3 desc">Rich creamy frozen desert featuring a base of icecream, typically
+                                                flavoured with milk solids, and loaded with an assortment of nuts and dry fruits.
+                                                <br/>
+                                                <span class="subMenuDesc" id="mixedDryFruitIcecreamPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://img-global.cpcdn.com/recipes/f5427408a1da39a5/680x482cq70/dry-fruits-cream-with-ice-cream-recipe-main-photo.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addMixedDryFruitIcecream">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="TenderCoconutIcecream">Tender Coconut Icecream</h2>
+                                            <p class="mt-3 desc">Frozen, dairy based desert that features the sweet, refreshing
+                                                flavour and soft texture of young, green coconuts, often with pieces of fresh 
+                                                tender coconut pulp mixed into creamy base.
+                                                <br/>
+                                                <span class="subMenuDesc" id="tenderCoconutIcecreamPrice">199/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://img-global.cpcdn.com/recipes/1c1972f2feac60dc/680x482cq70/tender-coconut-ice-cream-recipe-main-photo.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addTenderCoconutIcecream">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="RoastedAlmondIcecream">Roasted Almond Icecream</h2>
+                                            <p class="mt-3 desc">Rich and creamy desert with a deep, nutty flavour and satisfying
+                                                crunch from pieces of roasted almonds. 
+                                                <br/>
+                                                <span class="subMenuDesc" id="roastedAlmondIcecreamPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://static.toiimg.com/thumb/msid-53520122,width-1070,height-580,resizemode-75/53520122,pt-32,y_pad-40/53520122.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addRoastedAlmondIcecream">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="JackFruitIcecream">Jack Fruit Icecream</h2>
+                                            <p class="mt-3 desc">Creamy, tropical desert with the unique sweet and fruity flavour
+                                                of ripe jackfruit, often featuring smooth pulp and tender fruit pieces for a delight
+                                                texture and burst of exotic taste.
+                                                <br/>
+                                                <span class="subMenuDesc" id="jackFruitIcecreamPrice">199/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.babsprojects.com/wp-content/uploads/2021/07/jackfruit-kulfi-YT.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addJackFruitIcecream">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="ChocoliciousIcecream">Chocolicious Icecream</h2>
+                                            <p class="mt-3 desc">Chocolate Icecream featuring various chocolate components 
+                                                like chips, fudge mixed on a frozen granite slab to create a unique, hand
+                                                mixed dessert.
+                                                <br/>
+                                                <span class="subMenuDesc" id="chocoliciousIcecreamPrice">199/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://thesuburbansoapbox.com/wp-content/uploads/2017/03/Chocolate-Ice-Cream-2.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addChocoliciousIcecream">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="BlackCurrentIcecream">Black Current Icecream</h2>
+                                            <p class="mt-3 desc">Creamy, smooth, and sweet treat with a distinctive, tangy,
+                                                and fruity flavor profile similar to raspberries and blackberries, often 
+                                                with a vibrant purple color.
+                                                <br/>
+                                                <span class="subMenuDesc" id="blackCurrentIcecreamPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://blackcurranticecream.com/wp-content/uploads/2025/01/mmm-removebg-preview.png" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addBlackCurrentIcecream">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="sweets">
+                            <h1>Sweets</h1>
+                            <ul>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="Rasmalai">Rasmalai</h2>
+                                            <p class="mt-3 desc">Soft chenna patties in thick, sweetened 
+                                                milk. Creamy, chilled and full of saffron.
+                                                <br/>
+                                                <span class="subMenuDesc" id="rasmalaiPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://spicecravings.com/wp-content/uploads/2020/08/Rasmalai-7.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addRasmalai">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="KajuKatli">Kaju Katli</h2>
+                                            <p class="mt-3 desc">Made with cashew nuts, sugar, and ghee flavoured with
+                                                cardamom and cut into thin diamond shapes.
+                                                <br/>
+                                                <span class="subMenuDesc" id="kajuKatliPrice">399/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://images.healthshots.com/healthshots/en/uploads/2024/10/30172142/kaju-katli-sweets.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addKajuKatli">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="GulabJamun">Gulab Jamun</h2>
+                                            <p class="mt-3 desc">soft khoya dumplings soaked in warm sugar syrup. Sweet,
+                                                rich and melt in the mouth.
+                                                <br/>
+                                                <span class="subMenuDesc" id="gulabJamunPrice">199/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://traditionallymodernfood.com/wp-content/uploads/2020/11/gulab-jamun-how-to-make-gulab-jamun-with-milk-powder-6-scaled.jpeg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addGulabJamun">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="MalaiKhaja">Malai Khaja</h2>
+                                            <p class="mt-3 desc">Crispy pastry stuffed with sweet malai. A festive and 
+                                                flaky desert.
+                                                <br/>
+                                                <span class="subMenuDesc" id="malaiKhajaPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://thumbs.dreamstime.com/b/khaja-sweet-sweetmeat-pie-crust-nellore-malai-south-indian-sweets-called-white-plate-khaajaa-famous-arcot-vellore-320028957.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addMalaiKhaja">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="Chamcham">Chamcham</h2>
+                                            <p class="mt-3 desc">Soft cylindrical-shaped dessert made from fresh 
+                                                channa, cooked in sugar syrup and coated with coconut and nuts. 
+                                                <br/>
+                                                <span class="subMenuDesc" id="chamchamPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.livofy.com/health/wp-content/uploads/2023/06/Untitled-design-13.png" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addChamcham">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="Jangri">Jangri</h2>
+                                            <p class="mt-3 desc">crispy, golden texture indian sweet with authentic taste 
+                                                and aroma of a desert.
+                                                <br/>
+                                                <span class="subMenuDesc" id="jangriPrice">199/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://i.ytimg.com/vi/mRQhC1VByrI/maxresdefault.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addJangri">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="snacks">
+                            <h1>Traditional Snacks</h1>
+                            <ul>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="Arisalu">Arisalu</h2>
+                                            <p class="mt-3 desc">Made with rice flour, jaggery and topped with seseme seeds. 
+                                                Deep fried in oil.(250 grams)
+                                                <br/>
+                                                <span class="subMenuDesc" id="arisaluPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://i.ytimg.com/vi/PZRvGkAkHR4/maxresdefault.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addArisalu">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="Chakalu">Chakalu</h2>
+                                            <p class="mt-3 desc">Mixture of rice flour, butter, spices paste deep fried in oil.(500 grams)
+                                                <br/>
+                                                <span class="subMenuDesc" id="chakaluPrice">199/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://tastysouthindianfoods.com.au/wp-content/uploads/2024/07/chekkalu1-797x1024.png" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addChakalu">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="AkuPakodi">Aku Pakodi</h2>
+                                            <p class="mt-3 desc">mixture of rice flour, besan and spices shaped in the form of ribbon
+                                                and deep fried in oil.(500 grams)
+                                                <br/>
+                                                <span class="subMenuDesc" id="akuPakodiPrice">199/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://i.ytimg.com/vi/DwEH-BweyP8/maxresdefault.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addAkuPakodi">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="KobariBurelu">Kobari Burelu</h2>
+                                            <p class="mt-3 desc">
+                                                <br/>Mixture of coconut, rice flour and jaggery made into small patties 
+                                                and deep fried in oil.(250 grams)
+                                                <br/>
+                                                <span class="subMenuDesc" id="kobariBureluPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://2.bp.blogspot.com/-3jhJCSrckHE/UnHj9bhV_FI/AAAAAAAABSc/-sjmbk6MNnI/s1600/Kobbari+Burelu.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addKobariBurelu">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="KaramPusa">Karam Pusa</h2>
+                                            <p class="mt-3 desc">Mixture of gram flour and spices. Deep fried in oil.(500 grams)
+                                                <br/>
+                                                <span class="subMenuDesc" id="karamPusaPrice">199/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://www.telugufoodrecipes.com/resources/picture/org/karam-pusa.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addKaramPusa">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card subMenuCardStyle d-flex flex-row justify-content-between p-3">
+                                        <div>
+                                            <h2 class="subMenuDesc" id="Gavallu">Gavallu</h2>
+                                            <p class="mt-3 desc">wheat flour deep fried in oil and 
+                                                rolled in jaggery.(250 grams)
+                                                <br/>
+                                                <span class="subMenuDesc" id="gavalluPrice">249/-</span>
+                                            </p>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="https://southindianstore.com/wp-content/uploads/2020/11/bellam-gavvalu.jpg" class="subMenuImg d-block">  
+                                            <button class="addItemBtn m-1" id="addGavallu">Add</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="d-none" id="viewCartBtnContainer">
+                            <button class="d-flex flex-row justify-content-between viewCartBtn" id="viewCartBtn">
+                                <p><span id="totalCount"></span> items added<p>
+                                <p>View cart ></p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="backBtn" id="backButton">BACK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        /*View Cart*/
+        <div id="viewCartWindow" class="d-none MenuBackground">
+            <h1>Your order</h1>
+            <p id="viewCartInfo">
+            </p>
+            <div class="">
+                <button class="viewCartBtn text-center" id="addressBtn">Select address at next step</button>
+            </div>
+        </div>
+        /*Address Window*/
+        <div id="AddressWindow" class="d-none MenuBackground back text-center">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="addressCard mt-5">
+                    <p class="mt-3">Enter your name</p>
+                    <input  class="" id="name"/>
+                    <p class="mt-3">Enter your mobile number</p>
+                    <input class="" id="mobileNumber"//>
+                    <p class="mt-3">Enter your Address</p>
+                    <input class="" id="address"//>
+                    <br/>
+                    <button class="mt-3" id="AddressContinue">Continue</button>
+                    <button class="mt-3" id="AddressBack">Back</button>
+                </div>
+            </div>
+        </div>
+        /*ThankYou Window*/
+        <div id="ThankYouWindow" class="d-none text-center">
+            <img src="https://cdn.create.vista.com/downloads/9803d8fb-e9e7-46d5-aa36-a20501285ba0_1024.jpeg" class="back"/>
+        </div>
+        <script src="redirect.js"></script>
+    </body>
+</html>

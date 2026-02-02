@@ -1,0 +1,136 @@
+.background{
+    background-image: url("https://assets.vogue.com/photos/6352ccb841ea2bd565be085f/4:3/w_1600%2Cc_limit/GettyImages-1223580360.jpg");
+    background-size: cover;
+    height:100vh
+}
+h1{
+    color:white;
+    padding:10px;
+}
+p{
+    color:white;
+    padding-bottom: 10px;
+    font-weight:bold; 
+}
+.shadowing{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.icon{
+    height:100px;
+    width:100px
+}
+button{
+    width:100px;
+    height:50px;
+    border-radius: 10px;
+    color:red;
+    font-weight:bold;
+    border-width: 0px;
+}
+.cardStyle{
+    background-color: transparent;
+    width:50vw;
+    height:50vh;
+    margin-left:auto;
+    margin-right:auto;
+}
+.MenuBackground{
+    background-image: url("https://img.freepik.com/premium-photo/black-matte-plate-black-background-golden-fork-spoon-top-view_220770-15091.jpg");
+    background-size: cover;
+}
+.mainMenuImg{
+    height:40vh;
+    width:40vw;
+    margin-top: 20px;
+}
+.itemBtn{
+    width:45vw;
+    height:50vh;
+    background-color: transparent;
+}
+.mainMenuDesc{
+    color:white;
+}
+.subMenuDesc{
+    color:black;
+}
+.desc{
+    color:grey;  
+}
+.subMenuCardStyle{
+    height:30vh;
+    width:80vw;
+}
+.subMenuImg{
+    height:100px;
+    width:100px;
+}
+.addItemBtn{
+    width: 60px;
+    height:40px;
+    color:Red;
+    font-weight:bold;
+    border-color: red;
+    background-color: whitesmoke;
+    border-width:1px;
+}
+.countBtn{
+    height:40px;
+    width: 30px;
+    background-color: red;
+    color:white;
+    border-radius:0px;
+    border-width:0px;
+}
+.viewCartBtn{
+    background-color: red;
+    color:white;
+    width:80vw;
+    margin:16px;
+    position:fixed;
+    bottom: 30px;
+    margin-left:40px;
+}
+.backBtn{
+    position:fixed;
+    bottom: 2px;
+    left:5px;
+
+}
+.addMoreItemBtn{
+    background-color: black;
+    color:red;
+    border-width:0px;
+    width:200px;
+    font-weight:bold;
+    text-align: left;
+}
+ul{
+    list-style-type: none;
+}
+.editBtn{
+    background-color:transparent;
+    color:white;
+    font-size: 12px;
+    width:80px;
+    height:20px;
+}
+.edittxt{
+    font-size:12px;
+    text-align: left;
+    padding-left: 0px;
+}
+.updateBtn{
+    width:60px;
+    height:30px;
+    background-color: transparent;
+    font-size:12px;
+}
+.addressCard{
+    background-color: transparent;
+    height:60vh;
+    width:40vw;
+}
+.back{
+    height:100vh;
+}
