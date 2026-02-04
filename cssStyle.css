@@ -3,6 +3,12 @@
     background-size: cover;
     height:100vh
 }
+.headingfont{
+    font-size: 32px;
+}
+.parafont{
+    font-size: 20px;
+}
 h1{
     color:white;
     padding:10px;
@@ -27,25 +33,32 @@ button{
     font-weight:bold;
     border-width: 0px;
 }
+.buttonupdate{
+    width:150px;
+    font-size: 20px;
+}
 .cardStyle{
     background-color: transparent;
     width:50vw;
     height:50vh;
     margin-left:auto;
     margin-right:auto;
+    margin-top:auto;
+    margin-bottom:auto;
 }
 .MenuBackground{
     background-image: url("https://img.freepik.com/premium-photo/black-matte-plate-black-background-golden-fork-spoon-top-view_220770-15091.jpg");
     background-size: cover;
 }
 .mainMenuImg{
-    height:40vh;
-    width:40vw;
+    height:300px;
+    width:450px;
     margin-top: 20px;
+    border-radius: 10px;
 }
 .itemBtn{
-    width:45vw;
-    height:50vh;
+    width:450px;
+    height:350px;
     background-color: transparent;
 }
 .mainMenuDesc{
@@ -58,7 +71,7 @@ button{
     color:grey;  
 }
 .subMenuCardStyle{
-    height:30vh;
+    height:200px;
     width:80vw;
 }
 .subMenuImg{
