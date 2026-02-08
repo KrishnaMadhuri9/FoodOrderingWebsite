@@ -1308,7 +1308,7 @@ addressContinueEl.onclick=function(){
     if(nameEl.value===""){
         alert("Please enter a valid name");
     }
-    else if((mobileNumberEl.value==="")||(mobileNumberEl.length<9)){
+    else if((mobileNumberEl.value==="")/*||(mobileNumberEl.length<9)*/){
         alert("Please enter your 10-digit Mobile Number");
     }
     else if(addressEl.value===""){
@@ -1320,4 +1320,5 @@ addressContinueEl.onclick=function(){
         let ThankYouWindowEl=document.getElementById("ThankYouWindow");
         ThankYouWindowEl.classList.remove("d-none");
     }
+
 };
