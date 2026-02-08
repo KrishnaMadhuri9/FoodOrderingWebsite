@@ -1308,8 +1308,8 @@ addressContinueEl.onclick=function(){
     if(nameEl.value===""){
         alert("Please enter a valid name");
     }
-    else if(mobileNumberEl.value===""){
-        alert("Please enter Mobile Number");
+    else if((mobileNumberEl.value==="")||(mobileNumberEl.length<9)){
+        alert("Please enter your 10-digit Mobile Number");
     }
     else if(addressEl.value===""){
         alert("Please enter Address");
