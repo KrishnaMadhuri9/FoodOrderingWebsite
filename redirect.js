@@ -1270,6 +1270,28 @@ addressBtnEl.onclick=function(){
     AddressWindowEl.classList.remove("d-none");
 }
 
+function checknumber(event){
+    let value=(event.key);
+    let ascii=value.charCodeAt(0);
+    console.log(value,ascii);
+    let mobilenoEl= document.getElementById("mobileNumber");
+    if((ascii<58) && (ascii>47)){
+        let data=mobilenoEl.value;
+        console.log(data.length);
+        if(data.length>=10){
+            alert("Please enter your 10-digit phone number");
+            mobilenoEl.value="";
+        }
+    }
+    else{
+        alert("Please enter your 10-digit phone number");
+        mobilenoEl.value="";
+    }
+
+}
+let mobilenoEl= document.getElementById("mobileNumber");
+mobilenoEl.addEventListener("keydown",checknumber);
+
 let addressBackEl=document.getElementById("AddressBack");
 addressBackEl.onclick=function(){
     let viewCartWindowEl=document.getElementById("viewCartWindow");
