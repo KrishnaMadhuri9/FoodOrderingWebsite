@@ -245,6 +245,7 @@ function updateItemFunction(){
         clearInterval(intervalId);
     }
 }
+
 customizeObject={};
 function CustomizeInput(editEl,item,div1){
     if(customizeObject[item]===undefined)
@@ -275,6 +276,25 @@ function CustomizeInput(editEl,item,div1){
        let divEl=document.getElementById(temp);
        editEl.classList.add("d-none");
        divEl.classList.remove("d-none");
+    }
+}
+
+function checknumber(event){
+    let value=(event.key);
+    let ascii=value.charCodeAt(0);
+    console.log(value,ascii);
+    let mobilenoEl= document.getElementById("mobileNumber");
+    if((ascii<58) && (ascii>47)){
+        let data=mobilenoEl.value;
+        console.log(data.length);
+        if(data.length>=10){
+            alert("Please enter your 10-digit phone number");
+            mobilenoEl.value="";
+        }
+    }
+    else{
+        alert("Please enter your 10-digit phone number");
+        mobilenoEl.value="";
     }
 }
 
@@ -1270,25 +1290,6 @@ addressBtnEl.onclick=function(){
     AddressWindowEl.classList.remove("d-none");
 }
 
-function checknumber(event){
-    let value=(event.key);
-    let ascii=value.charCodeAt(0);
-    console.log(value,ascii);
-    let mobilenoEl= document.getElementById("mobileNumber");
-    if((ascii<58) && (ascii>47)){
-        let data=mobilenoEl.value;
-        console.log(data.length);
-        if(data.length>=10){
-            alert("Please enter your 10-digit phone number 1");
-            mobilenoEl.value="";
-        }
-    }
-    else{
-        alert("Please enter your 10-digit phone number 2");
-        mobilenoEl.value="";
-    }
-
-}
 let mobilenoEl= document.getElementById("mobileNumber");
 mobilenoEl.addEventListener("keydown",checknumber);
 
@@ -1308,8 +1309,8 @@ addressContinueEl.onclick=function(){
     if(nameEl.value===""){
         alert("Please enter a valid name");
     }
-    else if((mobileNumberEl.value==="")/*||(mobileNumberEl.length<9)*/){
-        alert("Please enter your 10-digit Mobile Number 3");
+    else if((mobileNumberEl.value==="")||(mobileNumberEl.length<9)){
+        alert("Please enter your 10-digit Mobile Number");
     }
     else if(addressEl.value===""){
         alert("Please enter Address");
@@ -1322,4 +1323,5 @@ addressContinueEl.onclick=function(){
     }
 
 };
+
 
