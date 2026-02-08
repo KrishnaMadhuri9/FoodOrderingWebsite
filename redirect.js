@@ -1279,12 +1279,12 @@ function checknumber(event){
         let data=mobilenoEl.value;
         console.log(data.length);
         if(data.length>=10){
-            alert("Please enter your 10-digit phone number");
+            alert("Please enter your 10-digit phone number 1");
             mobilenoEl.value="";
         }
     }
     else{
-        alert("Please enter your 10-digit phone number");
+        alert("Please enter your 10-digit phone number 2");
         mobilenoEl.value="";
     }
 
@@ -1309,7 +1309,7 @@ addressContinueEl.onclick=function(){
         alert("Please enter a valid name");
     }
     else if((mobileNumberEl.value==="")/*||(mobileNumberEl.length<9)*/){
-        alert("Please enter your 10-digit Mobile Number");
+        alert("Please enter your 10-digit Mobile Number 3");
     }
     else if(addressEl.value===""){
         alert("Please enter Address");
@@ -1322,3 +1322,4 @@ addressContinueEl.onclick=function(){
     }
 
 };
+
